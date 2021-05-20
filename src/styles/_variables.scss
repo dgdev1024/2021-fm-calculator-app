@@ -1,0 +1,50 @@
+// Dark Theme Colors
+$color-dark-main-bg: hsl(222, 26%, 31%);
+$color-dark-keypad-bg: hsl(223, 31%, 20%);
+$color-dark-screen-bg: hsl(224, 36%, 15%);
+$color-dark-delete-key-bg: hsl(225, 21%, 49%);
+$color-dark-delete-key-shadow: hsl(224, 28%, 35%);
+$color-dark-equals-key-bg: hsl(6, 63%, 50%);
+$color-dark-equals-key-shadow: hsl(6, 70%, 34%);
+$color-dark-key-bg: hsl(30, 25%, 89%);
+$color-dark-key-shadow: hsl(28, 16%, 65%);
+$color-dark-text-one: hsl(0, 0%, 100%);
+$color-dark-text-two: hsl(221, 14%, 31%);
+$color-dark-button-focus-shadow: hsl(0, 0%, 100%);
+
+// Light Theme Colors
+$color-light-main-bg: hsl(0, 0%, 90%);
+$color-light-keypad-bg: hsl(0, 5%, 81%);
+$color-light-screen-bg: hsl(0, 0%, 93%);
+$color-light-delete-key-bg: hsl(185, 42%, 37%);
+$color-light-delete-key-shadow: hsl(185, 58%, 25%);
+$color-light-equals-key-bg: hsl(25, 98%, 40%);
+$color-light-equals-key-shadow: hsl(25, 99%, 27%);
+$color-light-key-bg: hsl(45, 7%, 89%);
+$color-light-key-shadow: hsl(35, 11%, 61%);
+$color-light-text-one: hsl(60, 10%, 19%);
+$color-light-text-two: hsl(0, 0%, 100%);
+$color-light-button-focus-shadow: hsl(60, 10%, 19%);
+
+// Violet Theme Colors
+$color-violet-main-bg: hsl(268, 75%, 9%);
+$color-violet-keypad-bg: hsl(268, 71%, 12%);
+$color-violet-screen-bg: hsl(268, 71%, 12%);
+$color-violet-delete-key-bg: hsl(281, 89%, 26%);
+$color-violet-delete-key-shadow: hsl(285, 91%, 52%);
+$color-violet-equals-key-bg: hsl(176, 100%, 44%);
+$color-violet-equals-key-shadow: hsl(177, 92%, 70%);
+$color-violet-key-bg: hsl(268, 47%, 21%);
+$color-violet-key-shadow: hsl(290, 70%, 36%);
+$color-violet-text-one: hsl(52, 100%, 62%);
+$color-violet-text-two: hsl(198, 20%, 13%);
+$color-violet-text-three: hsl(0, 0%, 100%);
+$color-violet-button-focus-shadow: hsl(52, 100%, 62%);
+
+// Font Variables
+$font-family: "Spartan", sans-serif;
+$font-size: 32px;
+$font-weight: 700;
+
+// Other Variables
+$time-transition: 0.3s;

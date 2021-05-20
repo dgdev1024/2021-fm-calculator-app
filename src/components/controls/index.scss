@@ -1,0 +1,133 @@
+@import "../../styles/variables";
+
+.controls {
+  width: 100vw;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+    padding: 16px;
+    background-color: $color-dark-keypad-bg;
+    border-radius: 8px;
+  }
+
+  &__button {
+    padding: 12px 0px 6px;
+    font-size: 0.8rem;
+    color: $color-dark-text-two;
+    background-color: $color-dark-key-bg;
+    border: none;
+    border-bottom: 4px solid $color-dark-key-shadow;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+      border-color: $color-dark-button-focus-shadow !important;
+    }
+
+    &:hover {
+      border-color: $color-dark-button-focus-shadow !important;
+    }
+
+    &--delete {
+      font-size: 0.5rem;
+      text-transform: uppercase;
+      background-color: $color-dark-delete-key-bg;
+      border-color: $color-dark-delete-key-shadow;
+      color: $color-dark-text-one;
+    }
+
+    &--reset {
+      grid-column: 1 / 3;
+    }
+
+    &--equals {
+      grid-column: 3 / 5;
+      color: $color-dark-text-one;
+      background-color: $color-dark-equals-key-bg;
+      border-color: $color-dark-equals-key-shadow;
+    }
+  }
+}
+
+.main--theme-2 .controls {
+  &__container {
+    background-color: $color-light-keypad-bg;
+  }
+
+  &__button {
+    color: $color-light-text-one;
+    background-color: $color-light-key-bg;
+    border-color: $color-light-key-shadow;
+
+    &:focus {
+      border-color: $color-light-button-focus-shadow !important;
+    }
+
+    &:hover {
+      border-color: $color-light-button-focus-shadow !important;
+    }
+
+    &--delete {
+      color: $color-light-text-two;
+      background-color: $color-light-delete-key-bg;
+      border-color: $color-light-delete-key-shadow;
+
+      &:focus {
+        border-color: $color-dark-button-focus-shadow !important;
+      }
+
+      &:hover {
+        border-color: $color-dark-button-focus-shadow !important;
+      }
+    }
+
+    &--equals {
+      color: $color-light-text-two;
+      background-color: $color-light-equals-key-bg;
+      border-color: $color-light-equals-key-shadow;
+
+      &:focus {
+        border-color: $color-dark-button-focus-shadow !important;
+      }
+
+      &:hover {
+        border-color: $color-dark-button-focus-shadow !important;
+      }
+    }
+  }
+}
+
+.main--theme-3 .controls {
+  &__container {
+    background-color: $color-violet-keypad-bg;
+  }
+
+  &__button {
+    color: $color-violet-text-one;
+    background-color: $color-violet-key-bg;
+    border-color: $color-violet-key-shadow;
+
+    &:focus {
+      border-color: $color-violet-button-focus-shadow !important;
+    }
+
+    &:hover {
+      border-color: $color-violet-button-focus-shadow !important;
+    }
+
+    &--delete {
+      color: $color-violet-text-three;
+      background-color: $color-violet-delete-key-bg;
+      border-color: $color-violet-delete-key-shadow;
+    }
+
+    &--equals {
+      color: $color-violet-text-two;
+      background-color: $color-violet-equals-key-bg;
+      border-color: $color-violet-equals-key-shadow;
+    }
+  }
+}

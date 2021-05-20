@@ -1,0 +1,56 @@
+@import "../../styles/variables";
+
+.footer {
+  width: 100vw;
+
+  &__container {
+    display: grid;
+    place-items: center;
+    min-height: 32px;
+    background-color: $color-dark-keypad-bg;
+    border-radius: 8px;
+  }
+
+  &__attribution {
+    font-size: 0.35rem;
+    text-align: center;
+    color: $color-dark-key-bg;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-dark-text-one;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.main--theme-2 .footer {
+  &__container {
+    background-color: $color-light-keypad-bg;
+  }
+
+  &__attribution {
+    color: $color-light-text-one;
+  }
+
+  &__link {
+    color: $color-light-equals-key-shadow;
+  }
+}
+
+.main--theme-3 .footer {
+  &__container {
+    background-color: $color-violet-keypad-bg;
+  }
+
+  &__attribution {
+    color: $color-violet-text-one;
+  }
+
+  &__link {
+    color: $color-violet-text-three;
+  }
+}

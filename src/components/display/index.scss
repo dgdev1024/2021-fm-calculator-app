@@ -1,0 +1,62 @@
+@import "../../styles/variables";
+
+.display {
+  width: 100vw;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 8px;
+    position: relative;
+    height: 96px;
+    padding: 16px;
+    background-color: $color-dark-screen-bg;
+    border-radius: 8px;
+    overflow: hidden;
+
+    &--error {
+      border: 1px solid red;
+    }
+
+    &:after {
+      content: attr(data-calc-error);
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      font-size: 0.35rem;
+      color: red;
+      opacity: 0.7;
+    }
+  }
+
+  &__text {
+    color: $color-dark-text-one;
+
+    &--previous {
+      font-size: 0.5rem;
+      opacity: 0.5;
+    }
+  }
+}
+
+.main--theme-2 .display {
+  &__container {
+    background-color: $color-light-screen-bg;
+  }
+
+  &__text {
+    color: $color-light-text-one;
+  }
+}
+
+.main--theme-3 .display {
+  &__container {
+    background-color: $color-violet-screen-bg;
+  }
+
+  &__text {
+    color: $color-violet-text-one;
+  }
+}

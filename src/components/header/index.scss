@@ -1,0 +1,167 @@
+@import "../../styles/variables";
+
+.header {
+  width: 100vw;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 1rem;
+    text-transform: lowercase;
+    color: $color-dark-text-one;
+  }
+
+  &__theme-control {
+    display: grid;
+    grid-template-columns: auto 80px;
+    grid-template-rows: auto 24px;
+    grid-template-areas: ". button-labels" "control-label button-strip";
+    column-gap: 12px;
+    row-gap: 4px;
+  }
+
+  &__theme-control-label {
+    grid-area: control-label;
+    align-self: center;
+    justify-self: start;
+
+    font-size: 0.3rem;
+    text-transform: uppercase;
+    color: $color-dark-text-one;
+  }
+
+  &__theme-control-button-label-strip {
+    grid-area: button-labels;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__theme-control-button-label {
+    font-size: 0.3rem;
+    color: $color-dark-text-one;
+  }
+
+  &__theme-control-button-strip {
+    grid-area: button-strip;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    position: relative;
+    background-color: $color-dark-keypad-bg;
+    border-radius: 12px;
+    overflow: hidden;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 18px;
+      height: 18px;
+      background-color: $color-dark-equals-key-bg;
+      border-radius: 9px;
+      transition: $time-transition;
+    }
+  }
+
+  &__theme-control-button {
+    position: relative;
+    width: 33%;
+    z-index: 10;
+    opacity: 1;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 18px;
+      height: 18px;
+      background-color: $color-dark-button-focus-shadow;
+      opacity: 0;
+      border-radius: 50%;
+      transition: $time-transition;
+    }
+
+    &:hover:after {
+      opacity: 0.5;
+    }
+
+    &:focus {
+      outline: none;
+
+      &:after {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+.main--theme-2 .header {
+  &__title {
+    color: $color-light-text-one;
+  }
+
+  &__theme-control-label {
+    color: $color-light-text-one;
+  }
+
+  &__theme-control-button-label {
+    color: $color-light-text-one;
+  }
+
+  &__theme-control-button-strip {
+    background-color: $color-light-keypad-bg;
+
+    &:after {
+      left: calc(50% - 10px);
+      background-color: $color-light-equals-key-bg;
+    }
+  }
+
+  &__theme-control-button {
+    &:after {
+      left: calc(50% - 10px);
+      background-color: $color-light-button-focus-shadow;
+    }
+  }
+}
+
+.main--theme-3 .header {
+  &__title {
+    color: $color-violet-text-one;
+  }
+
+  &__theme-control-label {
+    color: $color-violet-text-one;
+  }
+
+  &__theme-control-button-label {
+    color: $color-violet-text-one;
+  }
+
+  &__theme-control-button-strip {
+    background-color: $color-violet-keypad-bg;
+
+    &:after {
+      left: calc(100% - 21px);
+      background-color: $color-violet-equals-key-bg;
+    }
+  }
+
+  &__theme-control-button {
+    &:after {
+      left: calc(100% - 21px);
+      background-color: $color-violet-button-focus-shadow;
+    }
+  }
+}
